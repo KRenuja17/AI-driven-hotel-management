@@ -1,23 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import Greeting from "./Greeting";
+import { Switch} from "@/components/ui/switch";
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
 
-
-
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  
 
   return (
-    <div>
-      <h1>hi</h1>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  
-    </h1>
-    <Button>Click me</Button>
-    </div>
-  )
-}
+    <>
+    <Navigation/>
+    <div className="relative min-h-screen">
+        <Hero />
+        <img
+          src="/assets/hero/hero_1.jpg"
+          alt=""
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        />
+      </div>
+    </>
+    
+  ); 
+};
 
-export default App
+export default App;
