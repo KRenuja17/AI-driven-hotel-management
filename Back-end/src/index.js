@@ -1,11 +1,15 @@
+import "dotenv/config";
 import express from "express";
 import hotelsRouter from "./api/hotel.js";
+import connectDB from "./infrastructure/db.js";
 
 // Create an Express instance
 const app = express();
 
 // Middleware to parse JSON data in the request body
 app.use(express.json());
+
+connectDB();
 
 app.use("/api/hotels", hotelsRouter);
 
