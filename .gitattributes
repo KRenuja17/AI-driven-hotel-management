@@ -1,0 +1,12 @@
+# Store text files as LF in the repo; check out with native endings.
+* text=auto
+
+# Binary — never convert.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+
+# Always LF, even on Windows.
+*.sh text eol=lf
