@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
 import { Link } from "react-router";
 
-function Navigation(p) {
+function Navigation() {
 
   return (
     <nav className="z-10 bg-black flex  items-center justify-between px-8 text-white py-4">

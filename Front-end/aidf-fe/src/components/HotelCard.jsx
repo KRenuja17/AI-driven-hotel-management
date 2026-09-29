@@ -1,26 +1,11 @@
 import { MapPin, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
+
 
 function HotelCard(props) {
 
-    // const [num, setNum] = useState(1);
-
-    const handleClick = (e) => {
-        // batching      
-
-        // setNum(num + 1);
-        // setNum(num + 1);
-        // setNum(num + 1);  
-
-        // setNum(num => num + 1);
-        // setNum(num => num + 1);  
-        // setNum(num => num + 1);  
-    }
 
     return (
         <div
-            // href={`/hotel/${props.hotel._id}`}
             key={props.hotel._id}
             className="block group relative"
         >
@@ -50,10 +35,6 @@ function HotelCard(props) {
                 </div>
             </div>
 
-            {/* <div className="mt-4">
-                <p>{num}</p>
-                <Button onClick={handleClick}>Click</Button>
-            </div> */}
         </div>
     );
 }
